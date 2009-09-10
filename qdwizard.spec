@@ -1,7 +1,7 @@
 Name:          qdwizard
 Summary:       Simple Java Swing Wizard API
 Version:       1.9
-Release:       %mkrel 4
+Release:       %mkrel 5
 License:       LGPL
 Group:	       Sound
 Source0:       %name-%version.tar.bz2
