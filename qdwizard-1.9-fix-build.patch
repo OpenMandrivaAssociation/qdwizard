@@ -1,0 +1,11 @@
+--- build.xml~	2007-01-02 20:03:55.000000000 +0100
++++ build.xml	2007-12-16 18:42:13.000000000 +0100
+@@ -5,7 +5,7 @@
+ 	<property name='version' value='1.9'/>
+ 
+ 	<!--CONST-->
+-	<property name='releases_dir' value='${java.io.tmpdir}/qdwizard_releases'/>
++	<property name='releases_dir' value='./qdwizard_releases'/>
+ 	<property name='current_release_dir' value='${releases_dir}/qdwizard-${version}'/>
+ 	<property name='current_release_zip' value='${java.io.tmpdir}/qdwizard-dist-${version}.zip'/>
+ 	<property name='website_dir' value='${java.io.tmpdir}/qdwizard_website'/>
