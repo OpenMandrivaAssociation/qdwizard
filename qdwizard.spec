@@ -1,14 +1,13 @@
 Name:          qdwizard
 Summary:       Simple Java Swing Wizard API
 Version:       1.9
-Release:       %mkrel 5
+Release:       2
 License:       LGPL
 Group:	       Sound
 Source0:       %name-%version.tar.bz2
 Patch0:        qdwizard-1.9-fix-build.patch
 URL: 	       http://qdwizard.sourceforge.net/
 BuildArch:     noarch
-BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires: ant
 BuildRequires: java-devel-gcj
@@ -46,13 +45,12 @@ Javadoc for %{name}.
 #--------------------------------------------------------------------
 
 %prep
-rm -fr %buildroot
 %setup -q -n QDWizard
 %patch0 -p0
 
 %build
 
-%{ant} 
+ant
 
 %install
 
@@ -66,5 +64,10 @@ install -d %{buildroot}%{_javadocdir}/%{name}-%{version}
 cp -r dist/* %{buildroot}%{_javadocdir}/%{name}-%{version}
 ln -s %{name}-%{version} %{buildroot}%{_javadocdir}/%{name}
 
-%clean
-rm -fr %buildroot
+
+%changelog
+* Sun Dec 16 2007 Nicolas Lécureuil <neoclust@mandriva.org> 1.9-1mdv2008.1
++ Revision: 120765
+- import qdwizard
+
+
