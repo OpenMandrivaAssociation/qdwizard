@@ -6,7 +6,7 @@ License:       LGPL
 Group:	       Sound
 Source0:       %name-%version.tar.bz2
 Patch0:        qdwizard-1.9-fix-build.patch
-URL: 	       http://qdwizard.sourceforge.net/
+URL: 	       https://qdwizard.sourceforge.net/
 BuildArch:     noarch
 
 BuildRequires: ant
